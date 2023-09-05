@@ -8,7 +8,6 @@ def totalSum(number):
 
 
 def main():
-    print("NUMBER 4")
 
     given_number = int(input("Enter number: "))
 
