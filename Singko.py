@@ -8,6 +8,8 @@ def decToBin(decimal):
 
 
 def binaryToN(binary, typeOfN):
+    if binary == 0:
+        return 0
     base = 1
     decimal = 0
     if typeOfN == "D":
@@ -17,6 +19,7 @@ def binaryToN(binary, typeOfN):
             decimal = decimal + remainder * base
             base = base * 2
             binary = binary // 10
+
         return decimal
 
     elif typeOfN == "O":
@@ -28,7 +31,6 @@ def binaryToN(binary, typeOfN):
             binary = binary // 10
 
         # Binary to Octal
-        # octal = ''.join(decToOctal(decimal))
         octal_string = decToOctal(decimal)
 
         octal_str = ""
